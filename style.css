@@ -1,0 +1,414 @@
+/* Table of Contents
+__________________________________
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+__________________________________*/
+
+/* General Content
+__________________________________*/
+.loganzen{
+float: left;
+margin-left: 6%;
+padding-top:3%;
+border-radius:5%; 
+}
+.crc{
+float: right;
+margin-right: 6%;
+padding-top:3%;
+border-radius:5%; 
+}
+.ccm{
+float: left;
+margin-left: 6%;
+padding-top:1%;
+border-radius:5%; 
+}
+.temperley{
+float: right;
+margin-right: 6%;
+padding-top:1%;
+border-radius:5%; 
+}
+.pizza{
+float: right;
+margin-right: 6%;
+padding-top:1%;
+border-radius:5%; 
+}
+.poster{
+float: left;
+margin-left: 6%;
+padding-top:1%;
+border-radius:5%; 
+}
+.skills{
+border-radius:5%;
+padding: .2em;
+margin-bottom: 2em;
+margin-top:1em;
+}
+.row{padding:2% 0;
+}
+.yellow{background-color:#ffcc03;
+}
+.portfolio{margin: 1% .5%;
+    background: #666;
+}
+@font-face{
+    font-family: WaterBrushROB;
+    src: local('WaterBrushROB.ttf') format("TrueType");
+}
+   .software{
+    border: 3px groove #ffcc03;
+    margin-right: .7em;
+    padding: .7em;
+    background: #fff;
+    border-radius: 10%;
+    -webkit-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+-moz-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+}
+.service{
+    
+    border: 3px groove #ffcc03;
+    margin-right: .7em;
+    padding: .7em;
+    background: #fff;
+    border-radius: 10%;
+    -webkit-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+-moz-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+}
+/* slider CSS
+----------------------------------*/
+#slider, #slider-2, #slider-3,
+#slider-4, #slider-5, #slider-6{
+  background: #fff;
+  width:100%;
+  height:auto;
+  max-width:50em;
+  margin:0 auto;  
+  position:relative;
+  padding:.3em;
+  padding-bottom:.11em;
+  margin-bottom: 5em;
+  border:6px double #34495e;
+  overflow:hidden;  
+  -webkit-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+  -moz-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+  box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+ 
+}
+.slide figure{
+  width:100%;
+  float:left;
+  padding:0;
+  margin-right:-100% !important;
+}
+.slide figure img{
+  max-width:100%;
+  height:auto;
+}
+.slide input[type="radio"]{
+ display:none;
+}
+.slide label{
+    position:absolute;
+    display:block;
+    width:1em;
+    height:1em;
+    border-radius:50%;
+    background:rgba(34,49,63,.7);
+    top:1em;
+    cursor:pointer;
+    z-index:30;
+ }
+.slide .label:hover,.slide input[type="radio"]:checked~label{
+  background:rgba(255,204,3,.7);
+  transition:.2s background;
+}
+.slide .label-1{
+  left:1em;
+}
+.slide .label-2{
+  left:2.25em;
+}
+.slide .label-3{
+  left:3.50em;  
+}
+.slide .label-4{
+  left:4.75em;
+}
+.slide .label-5{
+  left:6em;
+}
+.slide input[type="radio"]:not(:checked) ~ figure{
+  opacity:0;
+  transition:opacity .6s;
+  pointer-events:none;
+ }
+.slide figcaption{
+  color:#ecf0f1;
+  position:absolute;
+  bottom:-9999px;  
+  padding:1em;
+  line-height:1.6em;
+  box-sizing:border-box;
+  transition:.5s all;
+}
+.slide input[type="radio"]:checked  ~figure>figcaption{
+  background:rgba(34,49,63,.6);
+  bottom:.3em;
+  width:calc(100% - .6em);
+  transition:.5s all;
+ }
+
+.slide input[type="radio"]:checked  ~ figure{
+  -webkit-animation: animateSlide .4s alternate;
+    -moz-animation: animateSlide .4s alternate;
+    animation: animateSlide .4s alternate;
+}
+@-webkit-keyframes animateSlide{
+  0%{
+     transform:translateX(100%);
+  }
+  100%{
+   
+    transform:translateX(0%);
+  }
+}
+@-moz-keyframes animateSlide{
+  0%{
+     transform:translateX(100%);
+  }
+  100%{
+   
+    transform:translateX(0%);
+  }
+}
+@keyframes animateSlide{
+  0%{
+     transform:translateX(100%);
+      
+  }
+  100%{
+   
+    transform:translateX(0%);
+  }
+}
+
+
+
+/* Typography
+__________________________________*/
+body{
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+	color: #000;
+}
+
+h2 {
+    clear: both;
+    padding: .2em;
+    background: #fff;
+    border-radius: 100%;
+    color: #666;
+	font-family: 'WaterBrushROB','Rouge Script', cursive;
+	font-size: 3em;
+	margin: 0.67em;
+    text-align: center;
+}
+h2.title{
+    font-family: 'WaterBrushROB','Rouge Script', cursive;
+    padding: .2em;
+    color: #666;    
+    text-align: center;
+    background: #fff;
+    border-radius:100%;
+    -webkit-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+    -moz-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+    box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+ 
+}
+#me{
+     
+}
+p.bio{
+    background: #fff;
+    color: #666;
+    padding: 1%;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5%;
+    -webkit-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+    -moz-box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+    box-shadow: -2px 5px 22px -6px rgba(0,0,0,0.86);
+}
+h3.float{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 2em;
+}
+h3.contact{ 
+    padding: 0;
+    color: #000;
+    text-align: justify;
+    padding-left: 38%;
+}
+h3{ 
+    color: #000;
+    text-align: center;
+}
+
+figcaption{
+    font-size: 1.1em;
+}
+
+
+p{
+    font-size: 1.1em;
+    text-align: center;
+}
+p.float{
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    background: #fff;
+    color: #000;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+/* Header & Navigation
+__________________________________*/
+header{position: relative;
+width: 100%;
+z-index: 1;
+}
+
+header.main_nav{
+	padding:1% 0;
+	display:block;
+}
+
+ul.menu li{
+    font-family: 'Poiret One', cursive;
+	display: inline;
+    font-size: 1.4em;
+    padding: 0 2%; 
+    margin-left: -1%;
+    float: right;
+    
+}
+.services:hover a{color: #fff;}
+.skill:hover a{color: #fff;}
+.socialmedia:hover a{color: #fff;}
+.mywork:hover a{color: #fff;}
+.contact:hover a{color: #fff;}
+
+ul.menu li a{
+    color:#000;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.logo{
+    filter:none;
+	pointer-events:none;
+}
+
+/* Images Media
+__________________________________*/
+img{max-width:100%;
+}
+img.adobe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.avatar{
+	border-radius: 400px;
+	border: 3px solid #ffcc03;
+	margin: 25% 0 0;
+	pointer-events:none;
+}
+img:hover{
+    -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+}
+/* Footer
+__________________________________*/
+#contact{
+    min-width: 2em;
+}
+.contact{
+    padding: 1em;
+    margin-left: 7%;
+}
+.contact_info{
+    margin-top: 0.7em;
+}
+.google_map{
+    margin-right: -4%;
+}
+
+ul.social{
+    float: left;
+	margin: 2% 0 0 20%;
+	list-style-type: none;
+	text-align: center;
+    margin-right: 3%;
+}
+ul.social li{
+	font-size: 2em;
+	display: block;
+	}	
+ul.social li a{
+	color: #939393;
+}	
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.instagram a:hover{color: rgb(81,127,237);}
+ul.social li.behance a:hover{color: rgb(23,105,255);}
+ul.social li.linkedin a:hover{color: rgb(0,123,182);}
+
+p.copyright{
+	text-align:center;
+	color: #000;
+	font-size: 1em;
+	
+}
+p.joinme{
+    color: #666;
+    font-size: 1.4em;
+}
+/* Media Queries
+__________________________________*/
+/* Larger than mobile */
+@media (max-width: 1280px) {
+    .loganzen, .crc, .ccm, .temperley, .pizza, .poster, .skills{
+       align-content: center;
+        margin: auto;
+        float: none;
+    }
+	.main {padding-top: 15%;}
+	.portfolio img {
+    margin-bottom: 10%;} 
+	img.avatar{margin-top:55%;}
+	h2.bio{font-size:2.5em;}
+	p.bio{font-size: 1.25em; color: #666;}
+
+@media (max-width: 850px){
+    .google_map{
+        display: none;
+    }
+    ul.menu li {display:none;}
+}
